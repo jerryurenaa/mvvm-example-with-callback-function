@@ -1,0 +1,15 @@
+﻿<Application x:Class="desktopexample.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:desktopexample.ViewModels"
+             xmlns:v="clr-namespace:desktopexample.Views">
+    
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:OneViewModel}">
+            <v:OneView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:TwoViewModel}">
+            <v:TwoView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
